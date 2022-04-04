@@ -1,0 +1,23 @@
+@import '../variables';
+@import '../mixinis';
+
+.separator {
+  color: $brand-4;
+  font-size: 32px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  @include tablet-mobile {
+    margin-top: 80px;
+    font-size: 18px;
+  }
+  position: relative;
+  &::after {
+    content: ' ';
+    height: 4px;
+    width: 300px;
+    background-color: $brand-4;
+    position: absolute;
+    bottom: 20px;
+    left: 24%;
+  }
+}

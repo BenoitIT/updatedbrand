@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixinis';
+
+.topNav {
+  margin: 0 auto;
+  box-shadow: 0 0 3px rgb(53, 53, 53);
+  position: fixed;
+  width: 100%;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 120px;
+    margin: 0 auto;
+    @include tablet-mobile {
+      padding: 12px;
+    }
+  }
+  .burger {
+    border-radius: 50px;
+    background-color: $brand-4;
+    padding: 13px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $brand-2;
+    }
+  }
+}
