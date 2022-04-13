@@ -1,0 +1,13 @@
+@import '../variables';
+@import '../mixinis';
+
+.aboutSection {
+  min-height: 91vh;
+  &::before {
+    background-color: black;
+  }
+  background-color: green;
+  background: linear-gradient(0deg, rgba(0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url(../../public/resources/images/pic.png);
+  background-size: cover;
+}

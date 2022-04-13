@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import AboutSection from '../comps/AboutSection';
 import HomeSection from '../comps/HomeSection';
 import NavBar from '../comps/Navbar';
 import Separator from '../comps/separator';
@@ -22,6 +23,10 @@ const Home: NextPage = () => {
         <section id='home'>
           <Separator text='HOME' />
           <HomeSection />
+        </section>
+        <section id='home'>
+          <Separator text='ABOUT ME' />
+          <AboutSection />
         </section>
       </div>
     </>
