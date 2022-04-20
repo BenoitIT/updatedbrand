@@ -3,11 +3,12 @@
 
 .aboutSection {
   min-height: 91vh;
+  filter: grayscale(100%);
   &::before {
     background-color: black;
   }
   background-color: green;
-  background: linear-gradient(0deg, rgba(0, 0, 0), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(0deg, rgba(0, 0, 0), rgba(0, 0, 0, 0.4)),
     url(../../public/resources/images/pic.png);
   background-size: cover;
 }
