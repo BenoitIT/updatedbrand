@@ -28,6 +28,9 @@
   .desc {
     width: 100%;
     z-index: 2;
+    @include mobile-l {
+      text-align: center;
+    }
     h2 {
       width: 100%;
       margin-left: auto;
@@ -50,8 +53,7 @@
     .rightContainer {
       width: 100%;
       display: flex;
-      margin-left: auto;
-      gap: 32px;
+      justify-content: space-around;
     }
   }
 }
