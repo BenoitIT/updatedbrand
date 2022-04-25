@@ -25,7 +25,7 @@ const HomeSection: FC = () => {
         </div>
       </div>
       <div className={`${styles.downIcon}`}>
-        <Image src={DOWN} alt='issa' />
+        <Image src={DOWN} alt='down icon' />
       </div>
     </div>
   );

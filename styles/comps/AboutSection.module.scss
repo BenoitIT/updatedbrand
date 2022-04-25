@@ -2,13 +2,56 @@
 @import '../mixinis';
 
 .aboutSection {
-  min-height: 91vh;
-  filter: grayscale(100%);
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 32px;
+  align-items: center;
   &::before {
-    background-color: black;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -3%;
+    top: -5%;
+    background: radial-gradient(
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.877),
+        rgb(0, 0, 0)
+      ),
+      url('../../public/resources/images/issaAbout.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  background-color: green;
-  background: linear-gradient(0deg, rgba(0, 0, 0), rgba(0, 0, 0, 0.4)),
-    url(../../public/resources/images/pic.png);
-  background-size: cover;
+  .desc {
+    width: 100%;
+    z-index: 2;
+    h2 {
+      width: 100%;
+      margin-left: auto;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+  span {
+    font-size: 1.2rem;
+    color: white;
+  }
+  @include mobile-l {
+    flex-direction: column;
+    justify-content: unset;
+  }
+  .right {
+    z-index: 2;
+    width: 100%;
+    .rightContainer {
+      width: 100%;
+      display: flex;
+      margin-left: auto;
+      gap: 32px;
+    }
+  }
 }

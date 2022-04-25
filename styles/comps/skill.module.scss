@@ -1,0 +1,18 @@
+@import '../variables';
+@import '../mixinis';
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .label {
+    height: 14px;
+    width: 14px;
+    transform: rotate(-90deg);
+  }
+  p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
