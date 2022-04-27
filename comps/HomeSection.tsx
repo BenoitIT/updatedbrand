@@ -3,6 +3,7 @@ import Image from 'next/image';
 import PIC from '/public/resources/images/pic.png';
 import DOWN from '/public/resources/icons/downIcon.svg';
 import styles from '../styles/comps/HomeSection.module.scss';
+import Link from 'next/link';
 
 const HomeSection: FC = () => {
   return (
@@ -16,7 +17,9 @@ const HomeSection: FC = () => {
             heavy) With 3+ years of experience working on different clients
             apps.
           </p>
-          <button>Resume</button>
+          <Link href='/resume'>
+            <button>Resume</button>
+          </Link>
         </div>
         <div className={`${styles.imageContainer}`}>
           <div className={`${styles.image}`}>

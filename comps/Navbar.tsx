@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Burger from '/public/resources/icons/burger.svg';
 import Logo from '/public/resources/logo.svg';
 import styles from '../styles/comps/NavBar.module.scss';
+import Link from 'next/link';
 
 const NavBar: FC = () => {
   return (
@@ -11,9 +12,11 @@ const NavBar: FC = () => {
         <div className={`${styles.burger} burger`}>
           <Image src={Burger} />
         </div>
-        <div className={`${styles.logo} logo`}>
-          <Image src={Logo} />
-        </div>
+        <Link href='/'>
+          <div className={`${styles.logo} logo`}>
+            <Image src={Logo} />
+          </div>
+        </Link>
       </div>
     </div>
   );
