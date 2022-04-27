@@ -46,14 +46,14 @@ const SideNav: FC = () => {
               <p>Resume</p>
             </div>
           </Link>
-          <Link href='https://devissa.com/'>
+          <a href='https://devissa.com/' target='_blank'>
             <div className={`${styles.navItem}`}>
               <div className={`${styles.navIcon}`}>
                 <Image src={Blog} />
               </div>
               <p>Blog</p>
             </div>
-          </Link>
+          </a>
           <div className={`${styles.navItem}`}>
             <div className={`${styles.navIcon}`}>
               <Image src={Message} />

@@ -1,0 +1,13 @@
+@import '../variables';
+@import '../mixinis';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: $brand-3;
+  font-size: 0.8rem;
+  padding: 0 20px;
+  @include mobile-l {
+    padding: 0;
+  }
+}
