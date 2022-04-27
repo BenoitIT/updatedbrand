@@ -1,0 +1,29 @@
+@import '../variables';
+@import '../mixinis';
+
+.resumeSeparator {
+  padding: 0;
+  .circle {
+    width: 15px;
+    height: 15px;
+    background-color: $brand-1;
+    position: relative;
+    border-radius: 20px;
+    @include mobile-l {
+      width: 10px;
+      height: 10px;
+    }
+    &::after {
+      content: '';
+      width: 53px;
+      height: 2px;
+      background-color: $brand-1;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      @include mobile-l {
+        width: 28px;
+      }
+    }
+  }
+}

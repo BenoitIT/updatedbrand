@@ -22,7 +22,7 @@ const SideNav: FC = () => {
               <p>Home</p>
             </div>
           </Link>
-          <Link href='#about'>
+          <Link href='/#about'>
             <div className={`${styles.navItem}`}>
               <div className={`${styles.navIcon}`}>
                 <Image src={Skills} />
@@ -30,25 +30,28 @@ const SideNav: FC = () => {
               <p>Skills</p>
             </div>
           </Link>
-
-          <div className={`${styles.navItem}`}>
-            <div className={`${styles.navIcon}`}>
-              <Image src={Portfolio} />
+          <Link href='/#portfolio'>
+            <div className={`${styles.navItem}`}>
+              <div className={`${styles.navIcon}`}>
+                <Image src={Portfolio} />
+              </div>
+              <p>Portifolio</p>
             </div>
-            <p>Portifolio</p>
-          </div>
-          <div className={`${styles.navItem}`}>
-            <div className={`${styles.navIcon}`}>
-              <Image src={Blog} />
-            </div>
-            <p>Blog</p>
-          </div>
+          </Link>
           <Link href='/resume'>
             <div className={`${styles.navItem}`}>
               <div className={`${styles.navIcon}`}>
                 <Image src={Cv} />
               </div>
               <p>Resume</p>
+            </div>
+          </Link>
+          <Link href='https://devissa.com/'>
+            <div className={`${styles.navItem}`}>
+              <div className={`${styles.navIcon}`}>
+                <Image src={Blog} />
+              </div>
+              <p>Blog</p>
             </div>
           </Link>
           <div className={`${styles.navItem}`}>

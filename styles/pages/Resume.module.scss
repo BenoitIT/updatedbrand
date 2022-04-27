@@ -1,0 +1,66 @@
+@import '../variables';
+@import '../mixinis';
+
+.resumePage {
+  padding: 20px;
+  @include mobile-l {
+    padding: 0;
+  }
+  h2 {
+    color: white;
+    font-family: $font-fancy;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .resumeSecContainer {
+    border-left: 4px solid $brand-3;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin: 30px 0;
+    @include mobile-l {
+      border-left: 2px solid $brand-3;
+      padding: 5px 20px;
+      border-radius: 20px;
+      margin: 15px 0;
+    }
+    .resumeSec {
+      border-left: 4px solid $brand-1;
+      padding: 20px;
+      background: $brand-4;
+      border-radius: 10px;
+      margin: 25px 0;
+      position: relative;
+      @include mobile-l {
+        border-left: 2px solid $brand-1;
+      }
+      .resumeSeparator {
+        position: absolute;
+        top: 10%;
+        left: -53px;
+        @include mobile-l {
+          left: -28px;
+        }
+      }
+      h3 {
+        font-size: 1.4rem;
+        color: white;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+      }
+      small {
+        color: $brand-1;
+      }
+      p {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

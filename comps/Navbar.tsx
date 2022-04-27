@@ -9,14 +9,14 @@ const NavBar: FC = () => {
   return (
     <div className={`${styles.topNav}`}>
       <div className={styles.nav}>
-        <div className={`${styles.burger} burger`}>
-          <Image src={Burger} />
-        </div>
         <Link href='/'>
           <div className={`${styles.logo} logo`}>
             <Image src={Logo} />
           </div>
         </Link>
+        <div className={`${styles.burger} burger`}>
+          <Image src={Burger} />
+        </div>
       </div>
     </div>
   );
