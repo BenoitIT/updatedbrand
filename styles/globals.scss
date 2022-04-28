@@ -1,6 +1,21 @@
 @import './variables';
 @import './mixinis';
 
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 2px;
+  background: $brand-4;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $brand-1;
+  border-radius: 1px;
+}
+
 html,
 body {
   padding: 0;
@@ -19,7 +34,7 @@ a {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1540px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 100px;
   padding-top: 80px;

@@ -27,9 +27,11 @@ const HomeSection: FC = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.downIcon}`}>
-        <Image src={DOWN} alt='down icon' />
-      </div>
+      <Link href='/#contacts'>
+        <div className={`${styles.downIcon}`}>
+          <Image src={DOWN} alt='down icon' />
+        </div>
+      </Link>
     </div>
   );
 };

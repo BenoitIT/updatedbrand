@@ -1,0 +1,50 @@
+@import '../variables';
+@import '../mixinis';
+
+.contactSection {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  @include mobile-l {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+  .right {
+    align-self: center;
+    min-width: 230px;
+    padding-left: 100px;
+    @include mobile-l {
+      padding-left: 0;
+    }
+    button {
+      min-width: fit-content;
+      @include mobile-l {
+        margin-left: 0;
+      }
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: $brand-1;
+      color: white;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

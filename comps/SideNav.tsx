@@ -54,12 +54,14 @@ const SideNav: FC = () => {
               <p>Blog</p>
             </div>
           </a>
-          <div className={`${styles.navItem}`}>
-            <div className={`${styles.navIcon}`}>
-              <Image src={Message} />
+          <Link href='/#contacts'>
+            <div className={`${styles.navItem}`}>
+              <div className={`${styles.navIcon}`}>
+                <Image src={Message} />
+              </div>
+              <p>Contacts</p>
             </div>
-            <p>Contacts</p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
