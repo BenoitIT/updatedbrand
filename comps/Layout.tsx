@@ -1,13 +1,11 @@
 import { FC } from 'react';
 import Footer from './Footer';
-import NavBar from './Navbar';
-import SideNav from './SideNav';
+import NavBar from './NavBar';
 
 const Layout: FC = ({ children }) => {
   return (
     <div>
       <NavBar />
-      <SideNav />
       {children}
       <div className='container'>
         <Footer />
