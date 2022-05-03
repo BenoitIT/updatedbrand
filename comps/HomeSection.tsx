@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import PIC from '/public/resources/images/pic.png';
+import PIC from '/public/resources/images/issa.png';
 import DOWN from '/public/resources/icons/downIcon.svg';
 import styles from '../styles/comps/HomeSection.module.scss';
 import Link from 'next/link';

@@ -37,7 +37,10 @@
 .imageContainer {
   width: 100%;
   img {
-    filter: grayscale(100%) hue-rotate(78deg) opacity(60%);
+    filter: grayscale(90%) hue-rotate(48deg) opacity(90%);
+    &:hover {
+      filter: grayscale(0) hue-rotate(0) opacity(100%);
+    }
   }
   .image {
     max-width: 350px;
@@ -49,8 +52,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 370px;
+    padding: 10px;
     position: relative;
+
     &::before {
       content: '';
       background-color: $brand-4;

@@ -44,5 +44,23 @@ a {
   }
 }
 .hidden {
-  display: none;
+  display: none !important;
+}
+.sideBarExtended {
+  width: 150px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: $brand-4;
+  .navItem {
+    display: flex;
+    text-align: center;
+    margin: 3rem auto;
+    p {
+      display: block !important;
+      color: $brand-3;
+    }
+  }
 }
