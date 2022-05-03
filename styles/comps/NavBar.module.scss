@@ -18,16 +18,25 @@
       padding: 12px;
     }
   }
-  .burger {
+  .burger,
+  .closeBtn {
     border-radius: 50px;
     background-color: $brand-4;
     padding: 13px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: $font-fancy;
+    cursor: pointer;
     &:hover {
       background-color: $brand-2;
     }
+  }
+  .closeBtn {
+    color: $brand-1;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
   }
 }
 
@@ -79,14 +88,21 @@
   }
 }
 
-.sideNavMob {
+.responsiveController {
   display: none;
   @include tablet-mobile {
-    display: fixed;
+    display: block;
+  }
+}
+
+.sideNavMob {
+  @include tablet-mobile {
+    position: fixed;
     width: 100%;
-    height: 100%;
-    z-index: 2;
-    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+    top: 80px;
     background: black;
   }
 
@@ -99,10 +115,13 @@
     font-size: 24px;
     p {
       display: block;
+      color: $brand-3;
+      font-family: $font-fancy;
     }
   }
   .navItem:first-child {
     margin-top: 22px;
+    margin-bottom: 14px;
   }
 
   .navIcon {
