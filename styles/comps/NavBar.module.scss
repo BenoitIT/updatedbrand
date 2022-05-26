@@ -23,7 +23,7 @@
   .closeBtn {
     border-radius: 50px;
     background-color: $brand-4;
-    padding: 13px 10px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +56,11 @@
     z-index: 2;
     background: $brand-4;
     width: 100px;
+    transition: all 1sec;
     .navItem {
       text-align: center;
       margin: 3rem auto;
+      cursor: pointer;
       p {
         display: none;
       }
@@ -121,6 +123,9 @@
     align-items: center;
     gap: 24px;
     font-size: 24px;
+    div {
+      cursor: pointer;
+    }
     p {
       display: block;
       color: $brand-3;
