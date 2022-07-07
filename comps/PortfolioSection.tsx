@@ -4,19 +4,34 @@ import Afrinet from '/public/resources/images/afrinet.svg';
 import Project from './Project';
 
 const PortfolioSection: FC = () => {
-  const afrinetStacks = ['HTML', 'CSS', 'Nodejs', 'Postgres', 'Heroku'];
-  const smartBrainStacks = ['React', 'CSS', 'Nodejs', 'Postgres', 'Heroku'];
+  const afrinet = {
+    image: Afrinet,
+    name: 'AFRINET',
+    desc: 'Afrinet is a project for a consultant company in rwanda in Rwanda that provides network and computer maintenance, web development and design services. I build for them a website and a dashboard to handle clients requests, employees management and other company daily transactions',
+    stacks: ['HTML', 'CSS', 'Nodejs', 'Postgres', 'Netlify'],
+    link: '',
+    github: ''
+  };
+  const smartBrain = {
+    image: Afrinet,
+    name: 'Smart Brain',
+    desc: 'Smart brain is a web application that takes image, detect face and locate it, it also keeps history for the users',
+    stacks: ['React', 'CSS', 'Nodejs', 'Postgres', 'Heroku'],
+    link: '',
+    github: ''
+  };
+  const kokoMarket = {
+    image: Afrinet,
+    name: 'Koko market',
+    desc: 'Koko market is an online shop that allows users and sellers to buy and sell their products easily',
+    stacks: ['React', 'Tailwind', 'Nodejs', 'Postgres', 'Heroku'],
+    link: '',
+    github: ''
+  };
+
   return (
     <div className={styles.portfolio}>
-      <Project
-        image={Afrinet}
-        title='AFRINET'
-        desc='Afrinet is a project for a consultant company in rwanda in Rwanda that
-          provides network and computer maintenance, web development and design
-          services. I build for them a website and a dashboard to handle clients
-          requests, employees management and other company daily transactions'
-        stacks={afrinetStacks}
-      />
+      <Project projects={[afrinet, smartBrain, kokoMarket]} />
     </div>
   );
 };

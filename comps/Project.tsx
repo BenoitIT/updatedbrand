@@ -11,98 +11,45 @@ import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper';
 
 interface props {
-  image: string;
-  title: string;
-  desc: string;
-  stacks: Array<String>;
+  projects: Array<Object>;
 }
-const Project: FC<props> = ({ image, title, desc, stacks }) => {
+const Project: FC<props> = ({ projects }) => {
   return (
     <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
-      <SwiperSlide>
-        <div className={styles.project}>
-          <div className={styles.left}>
-            <Image src={image} />
-          </div>
-          <div className={styles.right}>
-            <div className={styles.header}>
-              <h2>{title}</h2>
-              <div className={styles.icons}>
-                <div className='icon'>
-                  <Image src={Github} />
+      {projects.map((project) => {
+        return (
+          <div key={project.name}>
+            <SwiperSlide>
+              <div className={styles.project}>
+                <div className={styles.left}>
+                  <Image src={project.image} />
                 </div>
-                <div className='icon'>
-                  <Image src={LinkIcon} />
-                </div>
-              </div>
-            </div>
-            <p>{desc}</p>
-            <div className={styles.stacksContainer}>
-              {stacks.map((stack, i) => (
-                <div key={i} className={styles.stack}>
-                  {stack}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.project}>
-          <div className={styles.left}>
-            <Image src={image} />
-          </div>
-          <div className={styles.right}>
-            <div className={styles.header}>
-              <h2>{title}</h2>
-              <div className={styles.icons}>
-                <div className='icon'>
-                  <Image src={Github} />
-                </div>
-                <div className='icon'>
-                  <Image src={LinkIcon} />
+                <div className={styles.right}>
+                  <div className={styles.header}>
+                    <h2>{project.name}</h2>
+                    <div className={styles.icons}>
+                      <div className='icon'>
+                        <Image src={Github} />
+                      </div>
+                      <div className='icon'>
+                        <Image src={LinkIcon} />
+                      </div>
+                    </div>
+                  </div>
+                  <p>{project.desc}</p>
+                  <div className={styles.stacksContainer}>
+                    {project.stacks.map((stack, i) => (
+                      <div key={i} className={styles.stack}>
+                        {stack}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-            <p>{desc}</p>
-            <div className={styles.stacksContainer}>
-              {stacks.map((stack, i) => (
-                <div key={i} className={styles.stack}>
-                  {stack}
-                </div>
-              ))}
-            </div>
+            </SwiperSlide>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.project}>
-          <div className={styles.left}>
-            <Image src={image} />
-          </div>
-          <div className={styles.right}>
-            <div className={styles.header}>
-              <h2>{title}</h2>
-              <div className={styles.icons}>
-                <div className='icon'>
-                  <Image src={Github} />
-                </div>
-                <div className='icon'>
-                  <Image src={LinkIcon} />
-                </div>
-              </div>
-            </div>
-            <p>{desc}</p>
-            <div className={styles.stacksContainer}>
-              {stacks.map((stack, i) => (
-                <div key={i} className={styles.stack}>
-                  {stack}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 };
