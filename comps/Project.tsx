@@ -40,13 +40,13 @@ const Project: FC<props> = ({ projects }) => {
                     <div className={styles.icons}>
                       {project.github && (
                         <div className='icon'>
-                          <a href={project.github}>
+                          <a href={project.github} target='_blank'>
                             <Image src={Github} />
                           </a>
                         </div>
                       )}
                       <div className='icon'>
-                        <a href={project.link}>
+                        <a href={project.link} target='_blank'>
                           <Image src={LinkIcon} />
                         </a>
                       </div>
