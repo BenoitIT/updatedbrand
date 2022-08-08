@@ -64,3 +64,22 @@ a {
     }
   }
 }
+.swiper-button-prev,
+.swiper-button-next {
+  top: 93% !important;
+  &::after {
+    color: $brand-1;
+  }
+  @include tablet-mobile {
+    top: 95% !important;
+  }
+}
+.swiper-pagination-progressbar-fill {
+  background-color: $brand-1 !important;
+  border-radius: 5px;
+  height: 3px !important;
+}
+.swiper-pagination-progressbar {
+  background: rgb(20, 20, 20) !important;
+  height: 3px !important;
+}

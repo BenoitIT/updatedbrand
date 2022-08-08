@@ -9,7 +9,7 @@ const PortfolioSection: FC = () => {
     name: 'AFRINET',
     desc: 'Afrinet is a project for a consultant company in rwanda in Rwanda that provides network and computer maintenance, web development and design services. I build for them a website and a dashboard to handle clients requests, employees management and other company daily transactions',
     stacks: ['HTML', 'CSS', 'Nodejs', 'Postgres', 'Netlify'],
-    link: '',
+    link: 'https://afrinet.netlify.app/',
     github: ''
   };
   const smartBrain = {
@@ -17,15 +17,15 @@ const PortfolioSection: FC = () => {
     name: 'Smart Brain',
     desc: 'Smart brain is a web application that takes image, detect face and locate it, it also keeps history for the users',
     stacks: ['React', 'CSS', 'Nodejs', 'Postgres', 'Heroku'],
-    link: '',
-    github: ''
+    link: 'https://mansurissa.github.io/smart-brain/',
+    github: 'https://github.com/mansurissa/smart-brain'
   };
   const kokoMarket = {
     image: Afrinet,
     name: 'Koko market',
     desc: 'Koko market is an online shop that allows users and sellers to buy and sell their products easily',
     stacks: ['React', 'Tailwind', 'Nodejs', 'Postgres', 'Heroku'],
-    link: '',
+    link: 'https://kigaliphone.com/',
     github: ''
   };
 

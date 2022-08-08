@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { FC } from 'react';
 import styles from '../styles/comps/project.module.scss';
 import Image from 'next/image';
@@ -7,15 +8,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-cards';
-import { EffectCards } from 'swiper';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from 'swiper';
+import Link from 'next/link';
 
 interface props {
   projects: Array<Object>;
 }
 const Project: FC<props> = ({ projects }) => {
   return (
-    <Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
+    <Swiper
+      pagination={{
+        type: 'progressbar'
+      }}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+      className='mySwiper'
+    >
       {projects.map((project) => {
         return (
           <div key={project.name}>
@@ -28,11 +38,17 @@ const Project: FC<props> = ({ projects }) => {
                   <div className={styles.header}>
                     <h2>{project.name}</h2>
                     <div className={styles.icons}>
+                      {project.github && (
+                        <div className='icon'>
+                          <a href={project.github}>
+                            <Image src={Github} />
+                          </a>
+                        </div>
+                      )}
                       <div className='icon'>
-                        <Image src={Github} />
-                      </div>
-                      <div className='icon'>
-                        <Image src={LinkIcon} />
+                        <a href={project.link}>
+                          <Image src={LinkIcon} />
+                        </a>
                       </div>
                     </div>
                   </div>
