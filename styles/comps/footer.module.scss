@@ -13,4 +13,9 @@
   @include mobile-l {
     padding: 0;
   }
+  b {
+    font-weight: 600;
+    color: $brand-1;
+    font-size: 16px !important;
+  }
 }

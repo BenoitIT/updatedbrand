@@ -69,9 +69,14 @@ a {
   top: 93% !important;
   &::after {
     color: $brand-1;
+    font-size: 40px !important;
   }
   @include tablet-mobile {
-    top: 95% !important;
+    top: 97% !important;
+    &::after {
+      color: $brand-1;
+      font-size: 32px !important;
+    }
   }
 }
 .swiper-pagination-progressbar-fill {
