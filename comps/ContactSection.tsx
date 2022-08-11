@@ -15,7 +15,9 @@ const ContactSection: FC = () => {
       </div>
       <div className={styles.right}>
         <div>
-          <button>Let's talk</button>
+          <a href='mailto:mansurissa6@gmail.com'>
+            <button>Let's talk</button>
+          </a>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@
     font-size: 2rem;
     margin: 0;
   }
+
   .resumeSecContainer {
     border-left: 4px solid $brand-3;
     padding: 10px 40px;
@@ -60,5 +61,21 @@
         font-size: 1rem;
       }
     }
+  }
+}
+.resumeBtn {
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mobile-l {
+    flex-direction: column;
+  }
+  a {
+    background: $brand-1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 }

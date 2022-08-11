@@ -8,6 +8,16 @@ const Resume: NextPage = () => {
     <>
       <section className='container'>
         <Separator text='Resume' />
+        <div className={styles.resumeBtn}>
+          <h2>Click Get resume button to get my full CV</h2>
+          <a
+            href='https://docs.google.com/document/d/1d9T4ZgURGXSYK7kd_X7cLPR73UNm_XxoiIv7Y7MkRcc/edit?usp=sharing'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Get resume
+          </a>
+        </div>
         <div className={styles.resumePage}>
           <h2>Profesional Experience</h2>
           {/* Onecategory */}
