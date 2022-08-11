@@ -11,10 +11,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper';
-import Link from 'next/link';
 
+type projects = {
+  image: string;
+  name: string;
+  desc: string;
+  stacks: Array<string>;
+  link: string;
+  github: string;
+};
 interface props {
-  projects: Array<Object>;
+  projects: Array<projects>;
 }
 const Project: FC<props> = ({ projects }) => {
   return (

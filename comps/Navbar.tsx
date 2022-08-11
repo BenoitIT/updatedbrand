@@ -12,7 +12,7 @@ import styles from '../styles/comps/NavBar.module.scss';
 import Link from 'next/link';
 import LINKEDIN from '/public/resources/icons/socials/linkedin.svg';
 
-const SideNav: FC = () => {
+const NavBar: FC = () => {
   const [responsive, setResponsive] = useState('');
 
   const [activeTab, setActiveTab] = useState('home');
@@ -253,4 +253,4 @@ const SideNav: FC = () => {
   );
 };
 
-export default SideNav;
+export default NavBar;
