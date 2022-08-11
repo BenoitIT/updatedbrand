@@ -13,7 +13,7 @@ import Link from 'next/link';
 import LINKEDIN from '/public/resources/icons/socials/linkedin.svg';
 
 const NavBar: FC = () => {
-  const [responsive, setResponsive] = useState('');
+  const [responsive, setResponsive] = useState('hidden');
 
   const [activeTab, setActiveTab] = useState('home');
 
