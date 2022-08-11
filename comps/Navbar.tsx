@@ -4,7 +4,7 @@ import Home from '/public/resources/icons/home.svg';
 import Skills from '/public/resources/icons/skills.svg';
 import Cv from '/public/resources/icons/cv.svg';
 import Portfolio from '/public/resources/icons/portfolio.svg';
-import Blog from '/public/resources/icons/Blog.svg';
+import Blog from '/public/resources/icons/blog.svg';
 import Message from '/public/resources/icons/message.svg';
 import Burger from '/public/resources/icons/burger.svg';
 import Logo from '/public/resources/logo.svg';

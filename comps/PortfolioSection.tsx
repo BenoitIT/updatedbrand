@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from '../styles/comps/portfolio.module.scss';
 import Afrinet from '/public/resources/images/afrinet.svg';
-import KigaliPhone from '/public/resources/images/kigaliphone.svg';
+import KigaliPhone from '/public/resources/images/kigaliPhone.svg';
 import SmartBrain from '/public/resources/images/smartBrain.svg';
 import Project from './Project';
 
