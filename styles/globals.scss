@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 @import './variables';
 @import './mixinis';
 
@@ -34,7 +37,7 @@ a {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 100px;
   padding-top: 80px;
