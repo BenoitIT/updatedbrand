@@ -1,45 +1,34 @@
 import { FC } from 'react';
 import styles from '../styles/comps/portfolio.module.scss';
-import Afrinet from '/public/resources/images/afrinet.svg';
-import KigaliPhone from '/public/resources/images/kigaliPhone.svg';
-import SmartBrain from '/public/resources/images/smartBrain.svg';
 import Project from './Project';
 
 const PortfolioSection: FC = () => {
   const afrinet = {
-    image: Afrinet,
-    name: 'AFRINET',
-    desc: 'Afrinet is a project for a consultant company in rwanda in Rwanda that provides network and computer maintenance, web development and design services. I build for them a website and a dashboard to handle clients requests, employees management and other company daily transactions',
-    stacks: ['HTML', 'CSS', 'Nodejs', 'Postgres', 'Netlify'],
-    link: 'https://afrinet.netlify.app/',
+    image: "/resources/images/urpic.jpg",
+    name: 'UR Huye Campus website',
+    desc: 'UR Huye Campus website is for Huye campus which is a multi-college campus. It is hosting students from 3 colleges: College of arts and social sciences(CASS), college of Business and Economics (CBE) and College of Medicine and Health sciences(CHMS). Administration of CASS and CBE are based here while administration of CHMS is based in Remera Campus.',
+    stacks: ['HTML', 'CSS', 'Nodejs', 'Postgres', 'Next js'],
+    link: 'https://ur-huye-web.vercel.app/',
     github: ''
   };
 
   const smartBrain = {
-    image: SmartBrain,
-    name: 'Smart Brain',
-    desc: 'Smart brain is a web application that takes image, detect face and locate it, it also keeps history for the users',
-    stacks: ['React', 'CSS', 'Nodejs', 'Postgres', 'Heroku'],
-    link: 'https://mansurissa.github.io/smart-brain/',
-    github: 'https://github.com/mansurissa/smart-brain'
+    image: '/resources/images/timeline.png',
+    name: 'Timeline Travels and Tours',
+    desc: 'Timeline Travels and Tours is a web application that helps the travelers to search for the tours and place their booking orders on real time',
+    stacks: ['laravel', 'CSS', 'Vue js', 'mysql'],
+    link: 'https://www.timelinetraveltour.com/',
+    github: ''
   };
 
   const kigaliPhones = {
-    image: KigaliPhone,
-    name: 'Kigali Phones',
-    desc: 'Kigali phones is a phone and other electroctronic accessories retail business based in Rwanda, they sell both used and brand new devices and accessories',
-    stacks: ['HTML', 'CSS', 'PHP', 'MySQL'],
-    link: 'https://kigaliphone.com/',
+    image: '/resources/images/xana.png',
+    name: 'Xana health',
+    desc: 'Xana health is platform that monitor patient information and patient treatment process accross health facility',
+    stacks: ['HTML', 'Tailwind css', 'Ruby', 'MySQL','Next js'],
+    link: 'https://xanahealth.online/',
     github: ''
   };
-  // const kokoMarket = {
-  //   image: Afrinet,
-  //   name: 'Koko market',
-  //   desc: 'Koko market is an online shop that allows users and sellers to buy and sell their products easily',
-  //   stacks: ['React', 'Tailwind', 'Nodejs', 'Postgres', 'Heroku'],
-  //   link: 'https://kigaliphone.com/',
-  //   github: ''
-  // };
 
   return (
     <div className={styles.portfolio}>

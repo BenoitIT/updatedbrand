@@ -11,7 +11,7 @@ const Resume: NextPage = () => {
         <div className={styles.resumeBtn}>
           <h2>Click Get resume button to get my full CV</h2>
           <a
-            href='https://docs.google.com/document/d/1d9T4ZgURGXSYK7kd_X7cLPR73UNm_XxoiIv7Y7MkRcc/edit?usp=sharing'
+            href='https://docs.google.com/document/d/1ueUn_dOeEWzaLszZlQY_SJEnDcsDajFLSfF0Oifebbw'
             target='_blank'
             rel='noreferrer'
           >
@@ -27,67 +27,32 @@ const Resume: NextPage = () => {
               <div className={styles.resumeSeparator}>
                 <ResumeSeparator />
               </div>
-              <h3>Codeland S.r.l (Milan , Italy)</h3>
+              <h3>Karisimbi Technology solutions</h3>
 
               <div className={styles.role}>
                 <h5>Frontend developer</h5>
-                <small>02/2021 - Present</small>
+                <small>06/2023 - 2024</small>
                 <p>
-                  Worked on diffrent projects like iren, unicredit and martineri
-                  gineto. Delivered pixel perfect UI components ready to be
-                  intgrated with Adobe Experience manager as backend. Using
-                  HTML, CSS, JS, JQuery, HTL
+                  Worked on xanahealth project. Delivered perfect UI components ready to be
+                  integrated with real time records from backend. Using
+                  Next JS
                 </p>
               </div>
-              <div className={styles.role}>
-                <h5>AEM developer</h5>
-                <small>12/2021 - 03/2022</small>
-                <p>
-                  Used Adobe experience manager to create different complex
-                  components that adds to create websites and web applications.
-                  Experienced servelts, XML, crone jobs, dialogs, wcmpojo and
-                  mony more.
-                </p>
-              </div>
+
             </div>
-            <div className={styles.resumeSec}>
-              <div className={styles.resumeSeparator}>
-                <ResumeSeparator />
-              </div>
-              <h3>Codity . rw (Kigali , Rwanda)</h3>
-              <div className={styles.role}>
-                <h5>Fullstack software engineer</h5>
-                <small>01/2019 - 06/2022</small>
-                <p>
-                  Built and worked on more than 5 different client projects
-                  including an eCommerce for a phone seller, a payment system,
-                  and websites for individuals, and local and international
-                  organizations.
-                </p>
-              </div>
-            </div>
+
             <div className={styles.resumeSec}>
               <div className={styles.resumeSeparator}>
                 <ResumeSeparator />
               </div>
               <h3>Andela (Kigali , Rwanda)</h3>
               <div className={styles.role}>
-                <h5>Techinical team lead</h5>
+                <h5>Apprenticeship</h5>
                 <small>06/2021 - 07/2022</small>
                 <p>
-                  Led and Worked with different teams with more than 10 members
+                  Worked with different teams with more than 10 members
                   learning web development using HTML, CSS, javascript, react,
-                  and node js. Built a trainees management application.
-                </p>
-              </div>
-              <div className={styles.role}>
-                <h5>Software engineer</h5>
-                <small>09/2020 - 06/2021</small>
-                <p>
-                  In a team of 7 people, we built a bus tracking application in
-                  record time. The app allows users to get real time data of a
-                  bus, seats status, location and many more and it saves time. I
-                  worked on both frontend and backend features
+                  and node js. Built an ecommerce web application.
                 </p>
               </div>
             </div>
@@ -107,7 +72,7 @@ const Resume: NextPage = () => {
                 <h5>
                   Bachelor of Science in Business and Information Technology
                 </h5>
-                <small>04/2021 - Present</small>
+                <small>2020 - 2023</small>
                 <p>
                   In business information technology I got skills in accounting,
                   economics, web technologies, java, ecomerce, business
@@ -119,15 +84,13 @@ const Resume: NextPage = () => {
               <div className={styles.resumeSeparator}>
                 <ResumeSeparator />
               </div>
-              <h3>IPRC Kigali</h3>
+              <h3>TSS B.T.R</h3>
               <div className={styles.role}></div>
               <h5>Technical secondary school</h5>
-              <small>01/2017 - 11/2019</small>
+              <small>01/2016 - 11/2018</small>
               <p>
-                Got skills in computer networking such as routing, switching,
-                CCTV camera installations and maintenance, Computer maintenance,
-                wireless networks installation and maintenance, server setup and
-                configurations, remote site control and many more.
+                Got skills in software development such as programming in PHP, HTML,
+                Basics of CSS, Algolithm and data structure and system analysis,
               </p>
             </div>
           </div>

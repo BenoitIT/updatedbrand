@@ -8,9 +8,9 @@ const AboutSection: FC = () => {
   return (
     <div className={styles.aboutSection}>
       <div className={styles.desc}>
-        Hello my name is <span>NSABIMANA Issa</span>, I love solving complex
+        Hello my name is <span>Benoit NDAGIJIMANA</span>, I love solving complex
         problems using my skills in programming. I have been in this industry
-        since 2018 and have worked with different companies and clients. I love
+        since 2022 and have worked with different companies and clients. I love
         working in a team of people who love what they do and in my freetime I
         do travling as my number one hobby.
         <div className='keySkills'>
@@ -29,12 +29,11 @@ const AboutSection: FC = () => {
             <Skill skill='React' />
             <Skill skill='Nodejs' />
             <Skill skill='Typescript' />
-            <Skill skill='Java' />
-            <Skill skill='AEM' />
+            <Skill skill='Next js' />
+            <Skill skill='Vue js' />
           </div>
           <div>
             <Skill skill='HTML' />
-            <Skill skill='CSS/Sass/SCSS' />
             <Skill skill='Figma/Adobe Xd' />
             <Skill skill='Tailwind/Material ui' />
             <Skill skill='Php/Laravel' />

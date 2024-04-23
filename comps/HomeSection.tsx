@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import PIC from '/public/resources/images/issa.png';
+import PIC from '/public/resources/images/Benn.png';
 import DOWN from '/public/resources/icons/downIcon.svg';
 import styles from '../styles/comps/HomeSection.module.scss';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ const HomeSection: FC = () => {
       <div className={`${styles.homeSection}`}>
         <div>
           <p>Hi 👋, I am </p>
-          <h2 className='name'>NSABIMANA Issa</h2>
+          <h2 className='name'>Benoit NDAGIJIMANA</h2>
           <p>
             A passion driven and problem solving oriented sofware engineer (FE
             heavy) With 3+ years of experience working on different clients
@@ -23,7 +23,7 @@ const HomeSection: FC = () => {
         </div>
         <div className={`${styles.imageContainer}`}>
           <div className={`${styles.image}`}>
-            <Image src={PIC} alt='issa' />
+            <Image src={PIC} alt='Benn Dev' />
           </div>
         </div>
       </div>

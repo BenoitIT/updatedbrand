@@ -13,12 +13,12 @@ import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper';
 
 type projects = {
-  image: string;
-  name: string;
-  desc: string;
-  stacks: Array<string>;
-  link: string;
-  github: string;
+  image: string|any;
+  name: string|any;
+  desc: string|any;
+  stacks: Array<string>|any;
+  link: string|any;
+  github: string|any;
 };
 interface props {
   projects: Array<projects>;
@@ -39,7 +39,7 @@ const Project: FC<props> = ({ projects }) => {
             <SwiperSlide>
               <div className={styles.project}>
                 <div className={styles.left}>
-                  <Image src={project.image} />
+                  <Image src={project.image} width={500} height={300}/>
                 </div>
                 <div className={styles.right}>
                   <div className={styles.header}>
@@ -58,14 +58,14 @@ const Project: FC<props> = ({ projects }) => {
                       )}
                       <div className='icon'>
                         <a href={project.link} target='_blank' rel='noreferrer'>
-                          <Image src={LinkIcon} />
+                          <Image src={LinkIcon} width={100} height={100} />
                         </a>
                       </div>
                     </div>
                   </div>
                   <p>{project.desc}</p>
                   <div className={styles.stacksContainer}>
-                    {project.stacks.map((stack, i) => (
+                    {project.stacks.map((stack:any, i:any) => (
                       <div key={i} className={styles.stack}>
                         {stack}
                       </div>

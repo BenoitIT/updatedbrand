@@ -5,12 +5,9 @@ const Footer: FC = () => {
   return (
     <div className={`${styles.footer}`}>
       <p>
-        Made with full focus and 💚 by
-        <b>
-          <a href='https://github.com/mansurissa'> Issa</a>
-        </b>
+        Made with full focus by
       </p>
-      <p>&copy; 2022 Issa NSABIMANA</p>
+      <p>&copy; 2022 Benoit NDAGIJIMANA</p>
     </div>
   );
 };

@@ -10,18 +10,18 @@ const SocialMedias: FC = () => {
   return (
     <div className={`${styles.socialMedias}`}>
       <div className={styles.left}>
-        <a href='https://www.linkedin.com/in/issansabimana/'>
+        <a href='https://www.linkedin.com/in/benoit-ndagijimana-4aa202240/'>
           <Image src={LINKEDIN} />
         </a>
       </div>
       <div className={styles.left}>
-        <a href='https://github.com/mansurissa'>
+        <a href='https://github.com/BenoitIT'>
           <Image src={Github} />
         </a>
       </div>
       <div className={styles.left}>
-        <a href='https://twitter.com/webdev_issa'>
-          <Image src={TWITER} />
+        <a href='https://www.instagram.com/benn_dev/'>
+          <Image src={IG} />
         </a>
       </div>
       {/* <div className={styles.left}>

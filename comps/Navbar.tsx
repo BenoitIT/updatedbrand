@@ -23,11 +23,10 @@ const NavBar: FC = () => {
         <div className={styles.nav}>
           <Link href='/'>
             <div className={`${styles.logo} logo`}>
-              <Image src={Logo} />
             </div>
           </Link>
           <div className={`${styles.burgerDk}`}>
-            <Link href='https://www.linkedin.com/in/issansabimana/'>
+            <Link href='https://www.linkedin.com/in/benoit-ndagijimana-4aa202240/'>
               <Image src={LINKEDIN} />
             </Link>
           </div>
@@ -139,22 +138,6 @@ const NavBar: FC = () => {
                 <p>Resume</p>
               </div>
             </Link>
-            <a href='https://devissa.com/' target='_blank'>
-              <div
-                className={`${styles.navItem} ${
-                  activeTab === 'blog' ? styles.active : ''
-                }`}
-                onClick={() => {
-                  setResponsive('hidden');
-                  setActiveTab('blog');
-                }}
-              >
-                <div className={`${styles.navIcon}`}>
-                  <Image src={Blog} />
-                </div>
-                <p>Blog</p>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -232,20 +215,6 @@ const NavBar: FC = () => {
                 <p>Resume</p>
               </div>
             </Link>
-
-            <a href='https://devissa.com/' target='_blank'>
-              <div
-                className={`${styles.navItem}`}
-                onClick={() => {
-                  setResponsive('hidden');
-                }}
-              >
-                <div className={`${styles.navIcon}`}>
-                  <Image src={Blog} />
-                </div>
-                <p>Blog</p>
-              </div>
-            </a>
           </div>
         </div>
       </div>

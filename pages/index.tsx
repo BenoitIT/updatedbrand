@@ -10,10 +10,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Issa NSABIMANA</title>
+        <title>Benoit NDAGIJIMANA</title>
         <meta
-          name='NSABIMANA Issa portifolio website'
-          content='Issa NSABIMANA'
+          name='Benoit NDAGIJIMANA portifolio website'
+          content='Benoit NDAGIJIMANA'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
